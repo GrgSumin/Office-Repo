@@ -27,6 +27,7 @@ To merge the new repository to the master branch, simply run this command
 ```
 git merge -m "Merge new branch" "branch name"
 ```
+Finally push the filess
 
 ```
 git push
