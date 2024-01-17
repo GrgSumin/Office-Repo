@@ -21,8 +21,12 @@ Checkout to the new branch
 ```
 git checkout 'branchname'
 ```
+Make necessary changes to the repository, add and commit all the files 
 
-Make necessary changes to the repository, add and commit all the files and push
+To merge the new repository to the master branch, simply run this command
+```
+git merge -m "Merge new branch" "branch name"
+```
 
 ```
 git push
