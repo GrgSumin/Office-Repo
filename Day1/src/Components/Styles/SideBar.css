@@ -1,0 +1,32 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  margin-top: 20px;
+  width: 20%;
+}
+.uppersidebar,
+.lowersidebar {
+  display: inline-flex;
+  flex-direction: column;
+}
+.sidebarlinks,
+.followrequest {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sidepage {
+  font-weight: 800;
+}
+
+.peopleid {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+.followrequest {
+  display: flex;
+
+  gap: 5px;
+}

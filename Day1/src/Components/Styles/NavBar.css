@@ -1,0 +1,68 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: auto;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 150px;
+  margin-left: 5px;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+#nav-logoname {
+  color: #da0819;
+}
+.find {
+  display: flex;
+  align-items: center;
+}
+.find input {
+  border-radius: 5px;
+}
+.search {
+  height: 25px;
+  width: 500px;
+  background-color: rgb(234, 228, 221);
+}
+.search:hover {
+  color: black;
+}
+.findicon {
+  margin-left: -30px;
+}
+.login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.btn {
+  height: 30px;
+  width: 130px;
+  border: 1px black;
+  border-radius: 5px;
+  background-color: #da0819;
+  color: white;
+}
+.person {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  margin-right: 10px;
+}
+.contactimg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px black;
+  margin-left: -35px;
+}
