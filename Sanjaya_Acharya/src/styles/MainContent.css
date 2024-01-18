@@ -1,0 +1,49 @@
+.main-content {
+    width: 50vw;
+    background-color: #eaeaea;
+}
+.desc {
+    position: relative;
+    margin: 20px;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.links {
+    position: absolute;
+    top: 32vh;
+    left: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.link-icons {
+    border: 1px solid darkgray;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.l-r {
+    position: absolute;
+    margin-left: 65%;
+}
+.follow-status {
+    display: flex;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    gap: 5px;
+    padding: 2px 8px;
+}
+.desc-cover-photo {
+    width: 90%;
+    height: 30vh;
+    border-radius: 20px;
+}
+.desc-profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: -50px;
+}
