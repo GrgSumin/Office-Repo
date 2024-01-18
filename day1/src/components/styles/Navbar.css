@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    padding: 20px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo .logoImage .outerCircle{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 26px;
+    left: 16px;
+    border-radius: 40px;
+    background-color: #E55F5F;
+}
+.logo .logoImage .innerCircle{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50px;
+    left: 34px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.logo .logoName{
+    padding-left: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #E55F5F;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.searchInput{
+    background-color: lightgray;
+    border-radius: 6px;
+    padding: 10px 100px;
+    outline: none;
+    border: none;
+}
+.searchIcon{
+    margin-left: -36px;
+}
+.profileInfo{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.profileInfo .creatorBtn{
+    background-color: #E55F5F;
+    color: white;
+    padding: 10px 24px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    margin-right: 40px;
+}
+.profileInfo .name{
+    padding: 0 10px;
+    font-weight: 500;
+}
+.profileInfo .profileImage{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}

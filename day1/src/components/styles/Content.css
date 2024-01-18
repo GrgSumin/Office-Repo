@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    background-color: #f4f0ec;
+    margin-left: 200px;
+    padding: 0 50px;
+}
+
+.channelBackground img{
+    /* margin: 15px 50px ; */
+    margin-top: 15px;
+    width: 1000px;
+    border-radius: 24px;
+    height: 200px;
+}
+.channelOwner{
+    width: 80%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+}
+.channelOwner img{
+    position: relative;
+    top: -50px;
+    width: 90px;
+    height: 80px;
+    border-radius: 16px;
+}
+.channelInfo{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ width: 970px;
+}
+ 
+.socialIcon{
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #c4c3d0;
+    font-size: 30px;
+    border-radius: 4px;
+}
+.channelDesc{
+    margin-left: 90px;
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.channelDesc .name{
+    font-size: 26px;
+    font-weight: 500;
+}
+.channelDesc .subsCount{
+    color: red;
+    font-size: 24px;
+    margin-left: 25%;
+}
+.channelDesc .subs{
+    margin-left: 15%;
+}
+.followingBtn{
+    padding: 6px 14px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #c4c3d0;
+    border-radius: 5px;
+}
+.followIcons{
+    display: flex;
+    align-items: center;
+}
+.followIcon{
+    padding: 10px;
+}
+
+.pageBtn .menus {
+    margin-top: 20px;
+}
+.pageBtn .menus a{
+    margin: 20px;
+    padding: 8px 20px;
+    border: 8px;
+}
+.pageBtn a:focus{
+    background-color: pink;
+}
