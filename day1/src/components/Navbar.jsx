@@ -1,7 +1,7 @@
 import React from "react";
 import { IoMdSearch, IoIosNotifications } from "react-icons/io";
 import "./styles/Navbar.css";
-import John from '../assets/john.png'
+import John from "../assets/john.png";
 
 const Navbar = () => {
   return (
@@ -10,22 +10,22 @@ const Navbar = () => {
         <div className="logoImage">
           <div className="outerCircle"></div>
           <div className="innerCircle"></div>
+          <div className="logoName">MyContent</div>
         </div>
-        <div className="logoName">MyContent</div>
-      </div>
-      <div className="searchBar">
-        <input
-          className="searchInput"
-          type="text"
-          name=""
-          id=""
-          placeholder="Find authors..."
-        />
-        <IoMdSearch className="searchIcon" size={22} />
+        <div className="searchBar">
+          <input
+            className="searchInput"
+            type="text"
+            name=""
+            id=""
+            placeholder="Find authors..."
+          />
+          <IoMdSearch className="searchIcon" size={22} />
+        </div>
       </div>
 
       <div className="profileInfo">
-      <button className="creatorBtn"> Become a creator</button>
+        <button className="creatorBtn"> Become a creator</button>
         <div className="notificationButton">
           <IoIosNotifications size={30} />
         </div>

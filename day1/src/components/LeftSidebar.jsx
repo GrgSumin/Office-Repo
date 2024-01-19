@@ -12,98 +12,84 @@ import Hero2 from "../assets/hero2.jpg";
 import Heroine from "../assets/heroine.jpg";
 import Heroine1 from "../assets/heroine1.jpeg";
 import Heroine2 from "../assets/heroine2.jpeg";
+import '../App.css'
 
 const Sidebar = () => {
-    // const allFollowers = [
-    //     {
-    //         image: Hero,
-    //         name: "Elon Musk"
-    //     },
-    //     {
-    //         image: Hero1,
-    //         name: "Elon Musk"
-    //     },
-    //     {
-    //         image: Hero2,
-    //         name: "Elon Musk"
-    //     },
-    //     {
-    //         image: Heroine,
-    //         name: "Elon Musk"
-    //     },
-    //     {
-    //         image: Heroine1,
-    //         name: "Elon Musk"
-    //     },
-    //     {
-    //         image: Heroine2,
-    //         name: "Elon Musk"
-    //     },
-    // ]
-
-    // const imageElements = allFollowers.map((item) => {
-    //     return (
-    //       <div className="image-container" key={item.image}> 
-    //         <img src={item.image} alt={item.name} />
-    //         <p>{item.name}</p>
-    //         {console.log(item)}
-    //       </div>
-    //     );
-    //   });
+  const icons = [
+    {
+      icon : IoHomeOutline,
+      title: "Feed"
+    },
+    {
+      icon : IoFlashOutline,
+      title: "Explore"
+    },
+    {
+      icon : IoChatbubblesOutline,
+      title: "Messages"
+    },
+    {
+      icon : TbSettings2,
+      title: "Settings"
+    },
+  ]
+  const allFollowers = [
+    {
+      image: Hero,
+      name: "Elon Jung",
+    },
+    {
+      image: Hero1,
+      name: "Hairan Thapa",
+    },
+    {
+      image: Hero2,
+      name: "Taylor GC",
+    },
+    {
+      image: Heroine,
+      name: "Selena Gurung",
+    },
+    {
+      image: Heroine1,
+      name: "Robert Shah",
+    },
+    {
+      image: Heroine2,
+      name: "Adele Nepali",
+    },
+  ];
 
   return (
     <div class="sidenav">
       <div className="menu">
-        <a href="#">
-          <IoHomeOutline /> Feed
-        </a>
-        <a href="#">
-          <IoFlashOutline /> Explore
-        </a>
-        <a href="#">
-          <IoChatbubblesOutline /> Messages
-        </a>
-        <a href="#">
-          <TbSettings2 /> Settings
-        </a>
-      </div>
-      <div className="following">
-        <div className="followingTitle">Following</div>
-        <div className="followingList">
-          <div className="singleFollower">
-            {/* <div>
-            {allFollowers.map((oneFollower) =>{
-                <>
-                {/* <img src={oneFollower.image} className="followingImage" alt={oneFollower.name} />
-                <div>{oneFollower.name}</div>
-                {console.log(oneFollower.image)} */}
-                {/* {imageElements}
-                </>
-            }
+        {icons.map((item) =>(
+          <a>
+            <item.icon /> {item.title}
+          </a>
+        ))
 
-            )}
-            </div>  */}
-            
-          <img src={Hero} alt="Elon Jung" />Elon Jung
-          </div>
-          <div className="singleFollower">
-          <img src={Hero1} alt="Ram Lal" />Ram Lal
-          </div>
-          <div className="singleFollower">
-          <img src={Hero2} alt="Mark Bahadur" />Mark Bahadur
-          </div>
-          <div className="singleFollower">
-          <img src={Heroine} alt="Sita Puri" />Sita Puri
-          </div>
-          <div className="singleFollower">
-          <img src={Heroine1} alt="Selena GC" />Selena GC
-          </div>
-          <div className="singleFollower">
-          <img src={Heroine2} alt="Taylor Bhandari" />Taylor Bhandari
-          </div>
-          
-        </div>
+        }
+        
       </div>
+
+      <div className="following">
+
+        <div className="followingTitle">Following</div>
+
+        <div className="followingList">
+
+          {allFollowers.map((item) => (
+            <div className="singleFollower" key={item.image}>
+              <img src={item.image} alt={item.name} />
+              <p>{item.name}</p>
+            </div>
+          ))}
+
+        </div>
+
+      </div>
+
     </div>
   );
 };

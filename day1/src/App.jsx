@@ -9,9 +9,11 @@ const App = () => {
   return (
     <>
     <Navbar/>
+    <div className="layout">
     <LeftSidebar />
     <Content />
     <RightSidebar />
+    </div>
     </>
   )
 }
