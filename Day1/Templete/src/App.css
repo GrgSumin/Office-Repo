@@ -2,10 +2,7 @@ body{
   background-color: #efeaea;
   margin: 0;
 }
-/* HomePage */
-.Main{
-  display: flex;
-}
+
 
 /* navbar */
 .nav{
@@ -14,6 +11,11 @@ body{
   font-family: Arial, Helvetica, sans-serifs;
   justify-content: space-between;
   height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
 }
 .content{
   display: flex;
@@ -43,13 +45,15 @@ body{
   padding: 20px;
   /* margin-left: 20%; */
   min-width: 200px;
+  
 }
 .btn button{
   background-color:rgb(180, 84, 49) ;
   border-radius: 7px;
-  padding: 10px;
   color: #efeaea;
+  padding: 10px;
   font-weight: bold;
+  border: none;
 }
 
 .profile{
@@ -66,9 +70,10 @@ body{
 /* LeftSidebar */
 .SideBar{
   background-color:whitesmoke ;
-  margin-top: 5px;
-  width: 300px;
-  
+  margin-top: 90px;
+  width: 250px;
+  height: 100vh;
+
 }
 .topics{
   padding: 15px;
@@ -97,6 +102,7 @@ body{
   gap: 10px;
   align-items: center;
   margin-top: 20px;
+  overflow: scroll;
  
 }
 .photos:hover{
@@ -114,39 +120,52 @@ body{
 /* Main Page */
 
 .containers{
-  margin-top: 5px;
-  margin-left: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 25%;
+  width: 400px;
+  padding: 10px;
+
+  
  
 }
 .coverPhoto{
   border-radius: 20px;
   /* aspect-ratio: 9/16; */
   /* object-fit: contain; */
+  width: 700px;
+  height: 300px;
 }
 .profilePhoto{
   border-radius: 30px;
   margin-top: -50px;
-  margin-left: 50px;
-}
+  margin-left: 110px;
+} 
 .profilePic{
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  width: 300px;
  
 }
 .profilePic h3{
-margin-left: 50px;
+margin-left: 110px;
 }
 .profilePic h4{
-  margin-left: 50px;
+  margin-left: 110px;
   font-size: small;
   color: grey;
   }
 
 .Links{
+  
   display: flex;
   justify-content: space-between;
+
 
 }
 .social ul{
@@ -188,17 +207,134 @@ margin-left: 50px;
  display: flex;
  list-style: none;
  gap: 40px;
+ padding: 10px;
+}
+.myPost{
+  background-color: whitesmoke;
+  width: 700px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+
 }
 
-.activities li:hover{
-  background-color: black;
+.album{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.unlock ul{
+  list-style-type: none;
+  display: flex;
+  gap: 7px;
+  height: 30px;
+  align-items: center;
+  
+}
+.myAlbum{
+  margin: 10px;
+  
+}
+.myAlbum img{
+  border-radius: 20px;
+}
+.lock{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.payment{
+  display: flex;
+  gap: 20px;
+}
+.payment button{
+  padding: 6px;
+  border: none;
+  border-radius: 8px;
   color: #efeaea;
-  border-radius: 30px;
-  width: 70px;
+  font-weight: bold;
 
 }
+.b1{
+  background-color:rgb(180, 84, 49) ;
 
+}
+.b2{
+  background-color: black;
+}
+.money{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.buttons-Subscribed{
+  background-color: #f0b9bc;
+  color:rgb(180, 84, 49) ;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  width: 80%;
+  /* height: 50px; */
+}
+.buttons-Subscribe{
+  background-color:rgb(180, 84, 49) ;
+  color: #efeaea;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  width: 80%;
+}
 
+/* LEftbar */
+
+.third{
+  margin-top: 100px;
+ 
+}
+.mainContent{
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+ 
+
+}
+.basic h4{
+  font-size: small;
+  font-weight: lighter;
+}
+@media screen and (min-width:900px) {
+  .Main{
+    display: grid;
+    grid-template-columns: 300px auto 400px ;
+    grid-gap: 100px;
+  }
+  
+  .middle {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Enable scrolling for the middle component */
+    height: calc(100vh - 0vh ); /* Subtract the height of the navbar from the viewport height */
+  }
+  
+
+  
+
+  /* Sidebar */
+  .SideBar{
+    background-color:whitesmoke ;
+    margin-top: 5px;
+    width: 250px;
+    height: 100vh;
+   margin-top: 90px;
+  
+
+  
+  }
+}
 
 
 
