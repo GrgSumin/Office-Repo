@@ -1,6 +1,8 @@
 .page-container {
     display: flex;
+    position: fixed;
 }
+
 .sidebar {
     width: 25vw;
     height: calc(100vh - 70px);

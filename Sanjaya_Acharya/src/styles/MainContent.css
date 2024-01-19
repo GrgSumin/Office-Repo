@@ -1,18 +1,20 @@
 .main-content {
     width: 50vw;
     background-color: #eaeaea;
+    overflow: auto;
+    height: fit-content;
 }
 .desc {
     position: relative;
     margin: 20px;
-    height: 40vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .links {
     position: absolute;
-    top: 32vh;
+    top: 17vh;
     left: 20px;
     width: 150px;
     display: flex;
@@ -38,12 +40,94 @@
 }
 .desc-cover-photo {
     width: 90%;
-    height: 30vh;
+    height: 15vh;
     border-radius: 20px;
 }
 .desc-profile-image {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 20px;
-    margin-top: -50px;
+    margin-top: -35px;
+}
+.desc-address {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.link-bar {
+    margin-left: 10px;
+    margin-top: 100px;
+    display: flex;
+}
+
+.l-b-links {
+    padding: 5px 15px;
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+.active {
+    background-color: black;
+    color: #fff;
+}
+
+.cgrey {
+    color: grey;
+}
+
+.post {
+    margin: 20px auto;
+    padding: 10px 15px;
+    width: 95%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+}
+.post-image {
+    width: 95%;
+    margin: 10px 2.5%;
+    border-radius: 20px;
+}
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lock {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.lock-icon {
+    font-size: 12px;
+}
+
+.lock-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.post-footer-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.p-f-btn {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.bgc-native {
+    background-color: #ee5511;
+    color: #fff;
 }
