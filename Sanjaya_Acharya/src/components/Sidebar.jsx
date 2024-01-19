@@ -9,59 +9,50 @@ const Menu = () => {
     const [activeID, setActiveID] = useState(0);
     const activeColor = "#ccc";
     const passiveColor = "transparent";
+    const menuItems = [
+        {
+            id: 0,
+            name: "Feed",
+            icon: <IoHomeOutline className="menu-icon" />,
+        },
+        {
+            id: 1,
+            name: "Explore",
+            icon: <IoFlashOutline className="menu-icon" />,
+        },
+        {
+            id: 2,
+            name: "Messages",
+            icon: <FiMessageCircle className="menu-icon" />,
+        },
+        {
+            id: 3,
+            name: "Settings",
+            icon: <FaGear className="menu-icon" />,
+        },
+    ];
 
     return (
         <div className="menu-container">
-            <div
-                className="menu-box"
-                onClick={() => setActiveID(0)}
-                style={{
-                    backgroundColor:
-                        activeID === 0 ? activeColor : passiveColor,
-                }}
-            >
-                <IoHomeOutline className="menu-icon" />
-                <div className="menu-name">Feed</div>
-            </div>
-
-            <div
-                className="menu-box"
-                onClick={() => setActiveID(1)}
-                style={{
-                    backgroundColor:
-                        activeID === 1 ? activeColor : passiveColor,
-                }}
-            >
-                <IoFlashOutline className="menu-icon" />
-                <div className="menu-name">Explore</div>
-            </div>
-            <div
-                className="menu-box"
-                onClick={() => setActiveID(2)}
-                style={{
-                    backgroundColor:
-                        activeID === 2 ? activeColor : passiveColor,
-                }}
-            >
-                <FiMessageCircle className="menu-icon" />
-                <div className="menu-name">Messages</div>
-            </div>
-            <div
-                className="menu-box"
-                onClick={() => setActiveID(3)}
-                style={{
-                    backgroundColor:
-                        activeID === 3 ? activeColor : passiveColor,
-                }}
-            >
-                <FaGear className="menu-icon" />
-                <div className="menu-name">Settings</div>
-            </div>
+            {menuItems.map((item) => (
+                <div
+                    key={item.id}
+                    className="menu-box"
+                    onClick={() => setActiveID(item.id)}
+                    style={{
+                        backgroundColor:
+                            activeID === item.id ? activeColor : passiveColor,
+                    }}
+                >
+                    {item.icon}
+                    <div>{item.name}</div>
+                </div>
+            ))}
         </div>
     );
 };
 
-const Followings = () => {
+const Followings = ({}) => {
     const followings = [
         {
             userId: 0,

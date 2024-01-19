@@ -27,7 +27,7 @@ const Navbar = () => {
             <IoMdNotificationsOutline className="notification-icon" />
 
             <div className="profile">
-                <div className="username">Username</div>
+                <div className="username">Rick Lynch</div>
                 <div className="profile-image">
                     <img
                         src="https://img.freepik.com/premium-photo/beautiful-girl-ao-dai-viet-nam_43285-18.jpg?w=360"
