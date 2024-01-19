@@ -4,6 +4,14 @@
   height: 100px;
   width: auto;
   align-items: center;
+  cursor: pointer;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* You can set the background color as per your design */
+  z-index: 1000;
 }
 .logo {
   display: flex;
@@ -26,6 +34,9 @@
 }
 .find input {
   border-radius: 5px;
+}
+.find:focus {
+  background-color: antiquewhite;
 }
 .search {
   height: 25px;
@@ -51,6 +62,10 @@
   border-radius: 5px;
   background-color: #da0819;
   color: white;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #f41224b4;
 }
 .person {
   display: flex;

@@ -62,6 +62,9 @@ const SideBar = () => {
           <h5 className="follwerid">Randy Orton</h5>
         </div>
       </div>
+      <div className="footer">
+        <p className="side-footer">2020-2023</p>
+      </div>
     </div>
   );
 };

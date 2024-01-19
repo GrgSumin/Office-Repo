@@ -1,0 +1,85 @@
+.rightSidebar {
+  width: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  position: sticky;
+  top: 0;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 2px;
+  gap: 20px;
+  height: 200px;
+}
+.card2 {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  padding: 2px;
+  gap: 20px;
+  height: 200px;
+  margin-top: 50px;
+}
+.card3 {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  padding: 2px;
+  gap: 20px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.product1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: lighter;
+}
+
+.mic-image {
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.product-description {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.subscription-btn {
+  text-align: center;
+}
+
+.sub-btn {
+  background-color: #f5515e;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.sub-btn:hover {
+  background-color: #da0819;
+}

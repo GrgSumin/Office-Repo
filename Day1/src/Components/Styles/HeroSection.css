@@ -1,0 +1,139 @@
+.mainsection {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  margin-top: 50px;
+  background-color: #efeaea;
+}
+.hero-img {
+  margin-left: 90px;
+  margin-top: 40px;
+}
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.natureimg {
+  border-radius: 20px;
+  position: absolute;
+}
+.heroimg {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+}
+.photos img:nth-child(1) {
+  top: 0;
+  left: 12%;
+}
+.photos img:nth-child(2) {
+  top: 120px;
+  left: 305px;
+}
+.socialmedia {
+  margin-top: 200px;
+  margin-left: 80px;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.medias {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.iconsmedia {
+  padding-left: 30px;
+}
+
+.follow-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  height: 20px;
+  width: 120px;
+}
+.intro {
+  margin-top: 9px;
+  margin-left: 30px;
+}
+.work {
+  margin-top: -17px;
+}
+.mailicon {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-left: 100px;
+}
+.buttongroup {
+  margin-left: 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.postbtn {
+  background-color: black;
+  color: antiquewhite;
+  border-radius: 4px;
+}
+.overbtn,
+.goalbtn {
+  border: none;
+  font-weight: 500;
+}
+.lowercontent {
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contentimg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 95px;
+}
+.frameimg {
+  border-radius: 20px;
+  position: absolute;
+}
+.girlimg {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+}
+.contentimg img:nth-child(2) {
+  top: 65px;
+}
+.premium {
+  margin-top: 210px;
+  margin-left: 80px;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.subscribersBtn {
+  background-color: #da0819;
+  color: antiquewhite;
+  border-radius: 5px;
+  padding: 5px;
+}
+.buybtn {
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  padding: 5px;
+}
+.unlock-btn {
+  color: rgba(0, 0, 0, 0.911);
+  font-weight: bold;
+  align-items: center;
+}

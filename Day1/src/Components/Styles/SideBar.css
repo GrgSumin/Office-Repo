@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   margin-left: 2%;
-  margin-top: 20px;
-  width: 20%;
+  margin-top: 100px;
+  width: 15%;
+  position: sticky;
+  top: 0;
 }
 .uppersidebar,
 .lowersidebar {
@@ -29,4 +31,12 @@
   display: flex;
 
   gap: 5px;
+}
+.footer {
+  margin-top: 60px;
+}
+.side-footer {
+  color: red;
+
+  display: inline-block;
 }
