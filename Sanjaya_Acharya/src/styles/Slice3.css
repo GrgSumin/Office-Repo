@@ -1,0 +1,53 @@
+.tier-box {
+    width: 95%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px auto;
+}
+
+.contents {
+    border-radius: 10px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tire-box-icon {
+    margin-right: 10px;
+    font-size: 44px;
+}
+
+.content-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tier-desc {
+    font-size: 12px;
+    margin: 10px auto;
+}
+
+.tier-btn-Subscribe,
+.tier-btn-Unsubscribe {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #e45f5e;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+.tier-btn-Unsubscribe {
+    background-color: #fae2e2;
+    color: #e45f5e;
+}
+.tier-btn-Subscribe:hover,
+.tier-btn-Unsubscribe:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}

@@ -13,24 +13,27 @@ const Navbar = () => {
                 <div className="logo-name">MyContent</div>
             </div>
 
-            <div className="search-bar">
+            <div className="search-bar none">
                 <input
+                    className="navItems none"
                     type="text"
                     name="search"
                     placeholder="Find Authors..."
                 />
-                <IoIosSearch className="icon" />
+                <IoIosSearch className="icon none" />
             </div>
 
-            <button className="become-creator-btn">Become a creator</button>
+            <button className="become-creator-btn none">
+                Become a creator
+            </button>
 
-            <IoMdNotificationsOutline className="notification-icon" />
+            <IoMdNotificationsOutline className="notification-icon none" />
 
-            <div className="profile">
-                <div className="username">Rick Lynch</div>
+            <div className="profile none">
+                <div className="username">Sumin Gurung</div>
                 <div className="profile-image">
                     <img
-                        src="https://img.freepik.com/premium-photo/beautiful-girl-ao-dai-viet-nam_43285-18.jpg?w=360"
+                        src="https://i.ibb.co/R2k1z0t/Untitled.png"
                         alt="profile"
                     />
                 </div>

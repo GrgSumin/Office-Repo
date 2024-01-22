@@ -1,79 +1,77 @@
-.main-content {
-    width: 50vw;
-    background-color: #eaeaea;
-    overflow: auto;
-    height: fit-content;
-}
-.desc {
+.profile-container {
     position: relative;
-    margin: 20px;
-    height: 20vh;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin: 10px;
 }
-.links {
+
+.profile-links {
     position: absolute;
-    top: 17vh;
-    left: 20px;
-    width: 150px;
+    width: 100%;
+    top: 110px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
 }
-.link-icons {
-    border: 1px solid darkgray;
-    padding: 5px;
-    font-size: 25px;
+
+.link-icon {
+    font-size: 20px;
+    border: 1px solid #000;
     border-radius: 5px;
+    padding: 3px;
     cursor: pointer;
 }
-.l-r {
-    position: absolute;
-    margin-left: 65%;
-}
-.follow-status {
+
+.profile-links-left,
+.profile-links-right {
     display: flex;
-    border: 1px solid darkgray;
-    border-radius: 5px;
-    gap: 5px;
-    padding: 2px 8px;
-}
-.desc-cover-photo {
-    width: 90%;
-    height: 15vh;
-    border-radius: 20px;
-}
-.desc-profile-image {
-    width: 70px;
-    height: 70px;
-    border-radius: 20px;
-    margin-top: -35px;
-}
-.desc-address {
-    display: flex;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
 }
 
-.link-bar {
-    margin-left: 10px;
-    margin-top: 100px;
+.follow-status {
     display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 12px;
+    cursor: pointer;
 }
 
-.l-b-links {
-    padding: 5px 15px;
-    border-radius: 30px;
-    background-color: transparent;
+.profile-cover-photo {
+    width: 95%;
+    height: 100px;
 }
-
-.active {
-    background-color: black;
-    color: #fff;
+.desc-profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: -50px;
 }
 
 .cgrey {
     color: grey;
+}
+
+.bar {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.bar div {
+    padding: 5px 15px;
+}
+
+.br20 {
+    border-radius: 20px;
 }
 
 .post {
@@ -105,6 +103,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background-color: #000;
+    color: #fff;
 }
 
 .lock-icon {
@@ -128,6 +128,13 @@
     border-radius: 10px;
 }
 .bgc-native {
-    background-color: #ee5511;
+    background-color: #e45f5e;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+}
+.active {
+    background-color: #000;
     color: #fff;
 }

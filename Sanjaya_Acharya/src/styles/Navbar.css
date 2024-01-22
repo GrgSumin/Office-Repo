@@ -1,23 +1,26 @@
 .navbar {
-    position: sticky;
+    position: relative;
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 70px;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
 }
+
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .logo-outer {
     position: relative;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #d40;
+    background-color: #e45f5e;
     cursor: pointer;
 }
 .logo-inner {
@@ -30,8 +33,7 @@
     left: 50%;
 }
 .logo-name {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #d40;
+    color: #e45f5e;
     font-weight: bold;
 }
 .search-bar {
@@ -59,16 +61,16 @@
 }
 
 .become-creator-btn {
-    background-color: #d40;
+    background-color: #e45f5e;
     color: #fff;
     border-radius: 10px;
     min-width: 150px;
     font-weight: bold;
     height: 40px;
-    border: 2px solid #f1774b;
+    border: 2px solid #f46f6e;
 }
 .become-creator-btn:hover {
-    background-color: #f51;
+    background-color: #c43f3e;
     cursor: pointer;
 }
 
@@ -97,4 +99,14 @@
 .profile-image img {
     width: 50px;
     height: 50px;
+}
+
+@media (max-width: 550px) {
+    .navbar {
+        align-items: flex-start;
+        width: 100vw;
+    }
+    .none {
+        display: none;
+    }
 }

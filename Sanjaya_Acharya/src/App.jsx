@@ -1,19 +1,18 @@
-import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import MainContent from "./components/MainContent";
-import Aside from "./components/Aside";
+import MainPage from "./components/MainPage";
+import "./App.css";
 
 const App = () => {
+    const [activeFollowing, setActiveFollowing] = useState(0);
+
     return (
         <div>
             <Navbar />
-            <div className="page-container">
-                <Sidebar />
-                <MainContent />
-                <Aside />
-            </div>
+            <MainPage
+                activeFollowing={activeFollowing}
+                changeActiveFollowing={setActiveFollowing}
+            />
         </div>
     );
 };
