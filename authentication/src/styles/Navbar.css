@@ -1,0 +1,25 @@
+.navbar {
+    width: 100vw;
+    height: 70px;
+    background-color: #123;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    height: 70px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:hover {
+    background-color: #234;
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.user-details {
+    color: #fff;
+    width: 50vw;
+    max-width: 400px;
+    margin: 100px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff2;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,0 +1,112 @@
+.navbar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-outer {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e45f5e;
+    cursor: pointer;
+}
+.logo-inner {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+}
+.logo-name {
+    color: #e45f5e;
+    font-weight: bold;
+}
+.search-bar {
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 50%;
+    padding: 10px;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 50%;
+    height: 30px;
+    background-color: #eee;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.search-bar .icon {
+    width: 30px;
+    margin-left: -30px;
+}
+
+.become-creator-btn {
+    background-color: #e45f5e;
+    color: #fff;
+    border-radius: 10px;
+    min-width: 150px;
+    font-weight: bold;
+    height: 40px;
+    border: 2px solid #f46f6e;
+}
+.become-creator-btn:hover {
+    background-color: #c43f3e;
+    cursor: pointer;
+}
+
+.notification-icon {
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+.profile-image img {
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 550px) {
+    .navbar {
+        align-items: flex-start;
+        width: 100vw;
+    }
+    .none {
+        display: none;
+    }
+}
