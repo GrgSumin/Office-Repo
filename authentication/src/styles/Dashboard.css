@@ -1,0 +1,25 @@
+.users-list-container {
+    position: relative;
+    width: 90vw;
+    margin: auto;
+    color: #ccc;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+}
+td,
+th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
