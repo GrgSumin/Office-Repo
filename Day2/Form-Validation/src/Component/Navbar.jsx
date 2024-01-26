@@ -12,7 +12,14 @@ function Navbar() {
       <div className="Nav">
         <ul>
           {authenticated ? (
-            <></>
+            <>
+              <li>
+                <Link to="/profile">Profile</Link>
+              </li>
+              <li>
+                <Link to="/home">Home</Link>
+              </li>
+            </>
           ) : (
             <>
               <li>

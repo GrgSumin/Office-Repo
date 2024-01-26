@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./Component/Home";
 import Login from "./Component/Login";
 import Navbar from "./Component/Navbar";
+import Profile from "./Component/Profile";
 import Register from "./Component/Register";
 import UpdateUser from "./Component/UpdateUser";
 import { AuthContext } from "./Context/Context";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/update/:_id" element={<UpdateUser />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </>
   );
