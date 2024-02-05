@@ -1,0 +1,117 @@
+.circle{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    border:solid black 10px;
+    position:absolute;
+    top:49px;
+    right:0;
+    margin-right: -20px;
+}
+.mainBody{
+height: 100px;
+width: 10px;
+background-color: black;
+position: absolute;
+top: 90px;
+right: 0;
+}
+.rightArm{
+    height: 10px;
+    width: 60px;
+    background-color: black;
+    position: absolute;
+    top: 120px;
+    right: -50px;
+    rotate: 30deg;
+    
+}
+.leftArm{
+    height: 10px;
+    width: 60px;
+    background-color: black;
+    position: absolute;
+    top: 120px;
+    right: 0px;
+    rotate: -30deg;
+
+}
+.leftLeg{
+    height: 10px;
+    width: 60px;
+    background-color: black;
+    position: absolute;
+    top: 210px;
+    right: -8px;
+    rotate: -60deg;
+}.rightLeg{
+    height: 10px;
+    width: 60px;
+    background-color: black;
+    position: absolute;
+    top: 210px;
+    right: -40px;
+    rotate: 60deg;
+}
+.aboveHead{
+    height:50px;
+    width:10px;
+    background-color:black;
+    position:absolute;
+    top:0;
+    right:0
+}
+.topLine{
+    width:120px;
+    height:10px;
+    background-color:black;
+    margin-left:95px;
+}
+.mainHeight{
+    width:10px;
+    height:250px;
+    background-color:black;
+    margin-left:95px;
+}
+.bottomLine{
+    width:200px;
+    height:10px;
+    background-color:black;
+}
+.lines{
+display: flex;  
+margin-top: 150px; 
+gap: 20px
+}
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 50px;
+    font-weight: bold;
+    height: 100px;
+    width: 80px;
+    border-bottom: 10px solid black;
+  
+  
+}
+
+.alphaBet{
+    margin-top: 40px;
+    width: 300px;
+    border: solid black;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+.alphaBet li{
+    width: 20px;
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.alphaBet li:active{
+    scale: 1.1;
+}
